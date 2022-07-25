@@ -43,19 +43,16 @@ variable prod_database_subnet_cidr { default = "10.100.10.0/24" }
 
 ## for peerping , get from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
 ## for this , can't get it from data source, only in console
-# variable common_iam_region_project_id  { default = "6d0d9837d70f4df98850fcd7da905822" }
-# variable security_iam_region_project_id  { default = "c87e73e0d0ff48229614ec96d6f1b03d" }
-# variable prod_iam_region_project_id  { default = "d4ed0bd83ec04045af3372bd51e70379" }
 
-variable transit_iam_region_project_id  { default = "461b0097661c4e248d8a472da57ae958" }
+variable transit_iam_region_project_id  { default = "Change me" }
 
 
 
 
 ### 
 variable cts_local_rotation_day { default = "60" }
-variable cts_centralized_rotation_days { default = "180" }
+#variable cts_centralized_rotation_days { default = "180" }
 
 ### log notify
-variable cts_notify_email { default = "liujia161@huawei.com" }
+variable cts_notify_email { default = "changeMe@xxxxx.com" }
 variable cts_notify_phone { default = "+6512345678" }

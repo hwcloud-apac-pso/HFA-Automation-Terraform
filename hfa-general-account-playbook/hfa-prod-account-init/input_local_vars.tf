@@ -33,6 +33,13 @@ variable transit_nonprod_egress_nat_gw_name  { default = "egress_nonprod_prod_na
 
 
 
+
+## for peerping , get from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
+## for this , can't get it from data source, only in console
+
+variable transit_iam_region_project_id  { default = "Change me" }
+
+
 ### for prod account 
 variable prod_env_vpc { default = "prod_env_vpc" }
 variable prod_env_vpc_cidr { default = "10.100.0.0/16" }
@@ -40,11 +47,6 @@ variable prod_private_subnet_cidr { default = "10.100.0.0/22" }
 variable prod_cce_subnet_cidr { default = "10.100.4.0/22" }
 variable prod_database_subnet_cidr { default = "10.100.10.0/24" }
 
-
-## for peerping , get from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
-## for this , can't get it from data source, only in console
-
-variable transit_iam_region_project_id  { default = "Change me" }
 
 
 

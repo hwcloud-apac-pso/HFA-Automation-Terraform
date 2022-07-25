@@ -34,10 +34,5 @@ variable transit_nonprod_egress_nat_gw_name  { default = "egress_nonprod_nat_gw"
 
 
 
-## for peerping , get from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
-## for this , can't get it from data source, only in console
-# variable common_iam_region_project_id  { default = "6d0d9837d70f4df98850fcd7da905822" }
-# variable security_iam_region_project_id  { default = "c87e73e0d0ff48229614ec96d6f1b03d" }
-# variable prod_iam_region_project_id  { default = "d4ed0bd83ec04045af3372bd51e70379" }
-
-variable transit_iam_region_project_id  { default = "461b0097661c4e248d8a472da57ae958" }
+## for peerping , get transit account project id from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
+variable transit_iam_region_project_id  { default = "Change me" }

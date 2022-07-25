@@ -32,7 +32,5 @@ variable transit_nonprod_egress_subnet_cidr  { default = "10.21.0.0/20" }
 variable transit_nonprod_egress_nat_gw_name  { default = "egress_nonprod_nat_gw" }
 
 
-
-
 ## for peerping , get transit account project id from "My Credentials"--> "API Credentials" --> "projects" --> "project id/region"
 variable transit_iam_region_project_id  { default = "Change me" }

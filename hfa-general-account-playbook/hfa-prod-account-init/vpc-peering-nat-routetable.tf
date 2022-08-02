@@ -6,7 +6,7 @@ resource "huaweicloud_nat_snat_rule" "egress_snat_rule_for_prod_account" {
   provider = huaweicloud.transit_service
   nat_gateway_id = data.terraform_remote_state.network.outputs.transit_egress_nat_gw_id  
   floating_ip_id = data.terraform_remote_state.network.outputs.transit_egress_nat_gw_eip
-  source_type    = 1
+  source_type    = 0
   cidr           = var.prod_env_vpc_cidr
 }
 

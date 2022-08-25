@@ -44,6 +44,7 @@ module "transit_service_prod_egress_vpc" {
   name = "${var.transit_service_prod_egress_vpc}"
   vpc_cidr = var.transit_prod_egress_vpc_cidr
   egress_subnet_cidr = var.transit_prod_egress_subnet_cidr
+  egress_nat_gw_name = var.transit_prod_egress_nat_gw_name
 
   providers = {
     huaweicloud = huaweicloud.transit_service
@@ -69,6 +70,7 @@ module "transit_service_nonprod_egress_vpc" {
   name = "${var.transit_service_nonprod_egress_vpc}"
   vpc_cidr = var.transit_nonprod_egress_vpc_cidr
   egress_subnet_cidr = var.transit_nonprod_egress_subnet_cidr
+  egress_nat_gw_name = var.transit_nonprod_egress_nat_gw_name
 
   providers = {
     huaweicloud = huaweicloud.transit_service
